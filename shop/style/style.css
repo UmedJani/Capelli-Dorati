@@ -1,0 +1,331 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    background: #FFFFFF;
+    color: #010001;
+    font-family: 'Cormorant', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', sans-serif;
+}
+/*Шапка*/
+header {
+   /* width: 100%; */
+   margin-bottom: 0;
+}
+.main-nav {
+    display: flex;
+    width: 1440px;  
+    height: 112px;
+}
+.header-container {
+   display: flex; 
+   width: 1144px;
+}
+.logo-container a {
+    display: block;
+    text-decoration: none;
+    width: 111px;
+    height: 60px;
+}
+.logo {
+    margin-top: 31px;
+    margin-left: 148px;
+    margin: 31px 83px 31px 148px; 
+}
+.logo-1 {
+    display: flex;
+    gap: 2px;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 0;
+    height: 26px;
+}
+.logo-2 {
+    display: flex;
+    gap: 2px;
+    margin: 0;
+    padding: 0;
+    height: 26px;
+}
+.logo-nav-container {
+    display: flex;
+    justify-content:flex-end; 
+}
+/*Навигация*/ 
+.site-nav-item-container {
+    width: px; 
+    margin-right: 390px;
+} 
+.site-nav-item {
+    position: relative;
+    margin-top: 51px;
+    padding:  0 ;
+    display: flex;
+    gap: 28px;  
+   list-style: none;
+}
+.site-nav-items li {
+    position: absolute;  
+}
+.site-nav-items a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #010001;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.site-nav-items a:visited {
+    color: #F8B847;
+}
+.site-nav-items a:hover {
+    text-decoration: none;
+    border-bottom: #010001 solid 1px;
+}
+.site-nav-items a:active {
+    color: #F8B847;
+}
+
+.bascet {
+    margin: 50px 23px 40px 0px;
+}
+.bascet-icon {
+    width: 36px;
+    height: 35px;
+    background-image: url(img/bascet.svg);
+    background-repeat: no-repeat;
+    display: block;
+}
+.bascet-icon:hover {
+    background-image: url(img/Vector\ 8.svg);
+    
+}
+.bascet a {
+    text-decoration: none;
+}
+.bascet-circle {
+    position: relative; 
+    width: 0;
+} 
+.circle {
+    position: absolute;
+    
+    left:21px;
+    bottom: 57px;  
+    /* right: 40px;
+    top: 42px;    */
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background:#F8B847;
+} 
+ .circle p {
+    position: absolute;
+    color: #010001;
+    top: -10px;
+    right: 7px; 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+} 
+.circle:hover {
+    background: #B98C3D;
+    border-radius: 50%;
+}
+.bascet-circle-icon:hover{
+   
+}
+.enter {
+    margin: 44px 27px 43px 0px;
+    width: 108px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid #010001;
+}
+.enter a {
+    text-decoration: none;
+ 
+}
+.enter p {
+    padding: 0;
+    margin: 8px 26px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;   
+    color: #010001;
+}  
+.enter:hover {
+   
+background: #A8A8A8;
+}
+.flag {
+    width: 32px;
+    height: 20px;
+    margin: 51px 6px 51px 0;
+
+}
+.eng-lang p {
+    color: #010001;
+    margin-top: 52px;
+    margin-bottom: 51px;
+    width: 32px;
+    height: 19px; 
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px; 
+}
+.shop {
+  width: 100%;
+}
+.shop-container h2 {
+    margin: 60px 621px 15px 622px;
+    padding: 0;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 51px;
+    color: #010001;
+}
+.line  img{
+    width: 370px;
+    height: 3px;
+    margin: 0 535px 60px 535px;
+}
+/* Catalog */
+.shop-item {
+    /* width: 368px; */
+    
+    margin: 0 148px 120px 148px;
+    padding: 0; 
+    display: flex;justify-content: center;
+    flex-wrap: wrap;
+    
+    gap: 20px;
+}
+.shop-items {
+    list-style: none;
+}
+.shop-items img {
+    list-style: none;
+    margin: 0 0 18px 0;
+}
+.shop-items h3 {
+    list-style: none;
+    margin: 0 0 5px 0;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #010001;
+}
+.shop-items p {
+    list-style: none;
+    margin: 0 0 20px 0;
+}
+.buy {
+    margin: 0px;
+    width: 108px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid #010001;
+}
+.buy  a {
+    text-decoration: none;
+    display: block;
+ 
+}
+.buy  p {
+    padding: 0;
+    margin: 8px 26px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;   
+    color: #010001;
+   
+}  
+.buy:hover { 
+    background: #A8A8A8;
+}
+/*Footer*/
+footer {
+    display: flex; 
+   width: 1440px;
+   height: 135px;
+    /* margin-top: 110px;
+    height: 500px;
+    background-color: rgb(67, 132, 111); */
+}
+.main-footer {
+    display: flex; 
+    width: 1440px;
+    height: 135px;
+}
+.logo-footer {
+    width: 111px;
+    padding: 36px 83px 36px 148px;
+}
+.logo-footer a {
+   text-decoration: none;
+   display: block;
+}
+.rule {
+    width: 157px;
+    padding: 60px 231px 0 0;  
+}
+.rule p {
+    margin: 0;
+    width: 157px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #010001;
+}
+.comp-doc {
+    padding: 60px 125px 0 0;
+}
+.comp-doc a { 
+    text-decoration: none;
+}
+.comp-doc p {
+    margin: 0;
+    width: 233px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #010001;
+}
+.privacy-policy {
+    margin-bottom: 5px;
+}
+.user-agreement {
+    padding: 82px 148px 0 0;
+}
+.user-agreement a {
+text-decoration: none;
+}
+.user-agreement p {
+    margin: 0;
+    width: 204px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #010001;
+}

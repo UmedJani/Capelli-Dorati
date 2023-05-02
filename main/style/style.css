@@ -1,0 +1,738 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Cormorant', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', sans-serif;
+}
+
+/*Шапка*/
+.main-nav {
+    display: flex;
+    width: 1440px;  
+    height: 112px;
+}
+.header-container {
+   display: flex; 
+   width: 1144px;
+} 
+.logo-container a {
+    display: block;
+    text-decoration: none;
+    width: 111px;
+    height: 60px; 
+}
+.logo {
+    
+    margin: 31px 83px 31px 148px; 
+}
+.logo-nav-container {
+    display: flex;
+    justify-content:flex-end; 
+}
+/*Навигация*/ 
+.site-nav-item-container {
+    height: 20px;
+    margin-right: 390px;
+} 
+.site-nav-item {
+    position: relative;
+    margin-top: 51px;
+    padding:  0 ;
+    display: flex;
+    gap: 28px;  
+   list-style: none;
+}
+.site-nav-items li {
+    position: absolute;  
+}
+.site-nav-items a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.site-nav-items a:visited {
+    color: #F8B847;
+}
+.site-nav-items a:hover {
+    text-decoration: none;
+    border-bottom: #FFFFFF solid 1px;
+}
+.site-nav-items a:active {
+    color: #F8B847;
+}
+.bascet {
+    margin: 50px 23px 40px 0px;
+}
+.bascet-icon {
+    width: 36px;
+     height: 35px;
+    background-image: url(img/basket.svg);
+    background-repeat: no-repeat;
+    display: block;
+}
+.bascet-icon:hover {
+    background-image: url(img/Vector\ 8.svg);
+}
+
+.bascet a {
+    text-decoration: none;
+}
+.bascet-circle {
+    position: relative; 
+    width: 0;
+} 
+.circle {
+    position: absolute;
+    left:21px;
+    bottom: 57px;  
+    /* right: 40px;
+    top: 42px;    */
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background:#F8B847;
+} 
+ .circle p {
+    position: absolute;
+    color: #010001;
+    top: -10px;
+    right: 7px; 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+} 
+.circle:hover {
+    background: #B98C3D;
+    border-radius: 50%;
+}
+.bascet-circle-icon:hover{
+   
+}
+.enter {
+    margin: 44px 27px 43px 0px;
+    border: 1px solid #FFFFFF;
+    width: 108px;
+    height: 35px;
+    background: #010001;
+    color: #FFFFFF;
+}
+.enter a {
+    text-decoration: none;
+}
+.enter p {
+    padding: 0;
+    margin: 8px 26px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}  
+.enter:hover {
+    background: #616161;
+}
+.flag {
+    width: 32px;
+    height: 20px;
+    margin: 51px 6px 51px 0;
+
+}
+.eng-lang p {
+    color: #FFFFFF;
+    margin-top: 52px;
+    margin-bottom: 51px;
+    width: 32px;
+    height: 19px; 
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px; 
+}
+/* Честно я эту часть с меню бургером я брал из интернета  */
+.burger {
+    margin-top: 24px;
+    margin-left: 30px; 
+    display: flex;
+    position: relative;
+    /* z-index: 50; */
+    align-items: center;
+    justify-content: flex-end;
+    width: 32px;
+    height: 32px;
+}
+.burger span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #FFFFFF;
+}
+.burger::before, .burger::after{ 
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    transition: all 0.3s ease 0s;
+}
+.burger::before {top: 0;}
+.burger::after {bottom: 0;}
+.burger.active span {transform: scale(0);
+}
+.burger.active::before {
+    top: 47%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+/*доб класс active для появ. крестика  */
+/* main */
+/*Видео*/
+.promo-sec {  
+    width: 1440px; 
+    margin: 0;
+    padding: 0;
+  
+ }
+.video-container{
+    margin-left: 0px;
+    margin-bottom: 123px;
+    position: relative;
+    width: 100%; 
+}  
+.promo-video {
+    position: relative;  
+    width: 100%; 
+    left: 100px;
+    top: 0;  
+ }   
+ /*О компании*/
+ .about-comp { 
+    margin-bottom: 130px;
+ }
+ .about-comp-container {
+   width: 562px;
+    height: 44px;
+    margin: 0  536px 39px 342px;
+ }
+.about-comp-text {
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.about-comp-texts {
+    width: 756px;
+    margin: 0  342px 0px 342px;
+    display: flex;
+    gap: 20px;
+}
+.about-comp-texts p {
+    margin: 0;
+    width: 368px;
+    height: 110px; 
+    text-align:left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+/* Продукция */
+.products h1 {
+    margin: 0 313px 35px 148px ;
+    width: 979px;
+    height: 268px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 123px;
+    line-height: 109%;
+    color: #FFFFFF;
+}
+.text-products {
+    margin: 0 245px 0px 633px;
+    width: 562px;
+    height: 110px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.catalog-1 {
+    width: 1155px;
+    display: flex;
+    
+}
+.shampoo {
+    width: 465px;
+    position: relative;
+    right: 120px; 
+}
+.shampoo h3 {
+    width: 135px;
+    margin-top: 196px;
+    margin-bottom: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.shampoo h2 {
+    width: 363px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.shampoo p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 465px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.shampoo p:nth-child(5) {
+    margin-bottom: 78px;
+} 
+.more-btn {
+    width: 155px;
+    height: 49px;
+    background: #FFFFFF;
+}
+.more-btn p {
+    width: 95px;
+    padding:15px 30px;
+    margin: 0 auto;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #010001;
+} 
+/* кнопка подробнее */
+.more-btn a {
+    text-decoration: none;
+}
+.catalog-2 {
+    /* width: 1040px; */
+    display: flex;
+}
+.conditioner {
+    position: relative;
+    width: 465px;
+    margin-top: 153px;
+    margin-left: 342px;
+}
+.img-conditioner {
+    position:relative;
+    bottom: 35px;
+    right: 108px;
+    z-index: -1;
+}
+.conditioner h3{
+    width: 135px;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.conditioner h2 {
+    width: 530px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.conditioner p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 465px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.conditioner p:nth-child(5) {
+    margin-bottom: 70px;
+} 
+.more-btn p {
+    width: 95px;
+    padding:15px 30px;
+    margin: 0 auto;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #010001;
+} 
+.more-btn:hover {
+    width: 155px;
+    height: 49px;
+    background: #A8A8A8;
+}
+.catalog-3 {
+    display: flex;
+    margin-bottom: 130px;
+}
+.nutrient {
+    margin:0;
+    margin-left: 29px;
+}
+.nutrient h3 {
+    width: 135px;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.nutrient h2 {
+    width: 391px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.nutrient p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 465px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.nutrient p:nth-child(5) {
+    margin-bottom: 70px;
+} 
+.more-btn p {
+    width: 95px;
+    padding:15px 30px;
+    margin: 0 auto;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #010001;
+} 
+/* Обратная связь */
+.contacts-container {
+    display: flex;
+    width: 829px;
+}
+.contacts h2 {
+    margin: 0 597px 54px 148px ;
+    width: 695px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 123px;
+    line-height: 109%;
+    color: #FFFFFF;
+}
+.logo-tel-comp {
+    margin-left: 148px;
+    
+}
+.contact-item {
+    width: 209px;
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 66px;
+}
+.contact-item a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+} 
+.tel-img {
+    position: relative;
+    top: 2px;
+    padding-right: 10px;
+}
+.inst-img {
+    position: relative;
+    top: 5px;
+    padding-right: 10px;
+    padding-top: 18px;
+}
+.fo-rm {
+    width: 368px;
+    margin-left: 276px;
+}
+.questions {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F8B847;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+input {
+    padding: 0px;
+    margin: 0;
+}
+.in-put {
+    width: 368px;
+    height: 30px; 
+    background-color: #010001;
+    color: #FFFFFF;    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    font-family: 'Montserrat';
+    margin-bottom: 30px;
+    outline: none; 
+}
+.group {
+    position: relative;
+}
+.name-label {
+    position: absolute;
+    color:#FFFFFF;
+    display: block;
+    top: 0;
+    left: 0; 
+} 
+/* Комментарий */
+.name-label, .comment {
+    position: absolute;
+    top: 0px;
+    
+}
+.in-put:focus {
+    border-color: #F8B847;
+    border: none;
+    border-bottom: 2px solid #F8B847;
+}
+.comment:focus {
+    border-color: #F8B847;
+    border: none;
+    border-bottom: 2px solid #F8B847;
+}
+.in-put:focus ~ .comment {
+    top: -12px;  
+    color: #F8B847;
+    font-size: 12px;
+    transition: 0.5s; 
+}
+.in-put:focus + .name-label {
+    /* transform: translateY(-60%); */
+    top: -12px;  
+    color: #F8B847;
+    font-size: 12px;
+    transition: 0.5s; 
+}
+
+/* пример кода который работает частично */
+/*.in-put:invalid + .name-label {
+    transform: translateY(-60%); 
+    color: #FFFFFF;
+    font-size: 12px;
+} */
+.checkbox-container {
+   display: flex;
+    width: 368px;
+    position: relative;
+    
+}
+.checkbox-input::before {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 19px;
+   border: 1px solid #9E9E9E;
+   background-color: #010001;
+   position: absolute;
+   bottom: 0px;
+}
+.checkbox-input:checked::after {
+    content: "";
+    background-color: rgb(15, 10, 10);
+    width: 12px;
+    height: 6px;
+    position: absolute;
+    left: 5px;
+    bottom: 8px;
+     background-image: url(img/checked.svg); 
+     background-size: 100%;
+    background-repeat: no-repeat;
+    display: block; 
+
+}
+
+.privacy{
+   margin-left: 15px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+    color: #9E9E9E;
+   
+} 
+.privacy a {
+    color: #9E9E9E;
+    text-decoration: none;
+}
+.privacy b {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    color:  #9E9E9E;
+}
+.input-send-btn {
+    margin-top: 63px;
+    margin-bottom: 100px;
+    background-color: #FFFFFF;
+    width: 154px;
+    height: 49px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.input-send-btn:hover {
+    background: #A8A8A8;
+}
+
+/* Footer*/
+.main-footer {
+    display: flex; 
+    width: 1440px;
+    height: 135px;
+    
+}
+.logo-footer {
+    width: 111px;
+    padding: 36px 83px 36px 148px;
+   
+}
+.logo-footer a {
+   text-decoration: none;
+   display: block;
+}
+.rule {
+    width: 157px;
+    padding: 60px 231px 0 0;  
+}
+.rule  p {
+    margin: 0;
+    width: 157px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.comp-doc {
+    padding: 60px 125px 0 0;
+    
+}
+.comp-doc a { 
+    text-decoration: none;
+}
+.comp-doc p {
+    margin: 0;
+    width: 233px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.privacy-policy {
+    margin-bottom: 5px;
+}
+.user-agreement {
+    padding: 82px 148px 0 0;
+}
+.user-agreement a {
+    text-decoration: none;
+}
+.user-agreement p {
+    margin: 0;
+    width: 204px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+

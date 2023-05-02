@@ -1,0 +1,218 @@
+/*  Корзина  */
+.pop-up-container {
+    margin: 0; 
+    width: 100%;
+    height: 100%; 
+    padding: 100px 342px 164px 342px; 
+    display: none;
+  
+}
+.overlay {
+    position: fixed;
+    top: 0; left: 0; 
+    width: 100%;
+    height: 100%;
+    background: #F5F5F5; 
+    opacity: 0.7; 
+    z-index: -1;
+}
+.pop-up {
+    position: relative; 
+    z-index: 1; 
+     width: 756px; 
+    /* height: 760px; */
+    background-color: #fff;
+  
+}
+.btn-close {
+    position: absolute;
+    margin: 30px 30px 0 706px;
+   cursor: pointer;
+   background-color: #FFFFFF;
+   border: none;
+}
+.pop-up h2 {
+    padding: 40px 280px 0px 281px;
+    margin: 0; 
+    margin-bottom: 10px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 51px;
+    color: #010001;
+    
+}
+.pop-up-line img{
+    margin: 0 261px 40px 262px;
+    width: 233px;
+    height: 3px;
+}
+.popup-product {
+    display: flex;
+    width: 562px;
+    height: 216px;
+    margin-left: 97px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #010001;
+}
+.popup-product h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #010001;
+}
+.popup-product p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #010001;
+}
+.popup-product span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #010001; 
+} 
+.quantity{
+    display: flex;
+    justify-content: space-between; 
+    width: 124px;
+    height: 41px;
+    margin-top: 33px;
+    margin-bottom: 20px;
+    /* background: #FFFFFF;
+    border: 1px solid #010001;
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 19px; */
+   
+}
+.counter__button {
+    position: relative;
+    /* padding: 10px; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 19px;
+    
+}
+.counter-button-minus {
+    position: relative;
+    top: 10px;
+    left: 30px;
+    color: #010001;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 19px;
+}
+.counter-button-plus {
+    position: relative;
+    top: 10px;
+    right: 30px;
+    color: #010001;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 19px;
+}
+.counter-input input{
+    width: 124px;
+    height: 41px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #010001;
+    color: #010001;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 19px;
+}
+.quantity p {
+    /* padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 19px;
+    */
+}
+/* .quantity a {
+     text-decoration: none;
+} */
+.delete {
+    position: relative;
+    bottom: 55px; 
+    left: 335px;
+
+}
+.total-price {
+    display: flex;
+    justify-content: space-between; 
+    margin: 0 99px 20px 97px;
+} 
+.total-price p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #010001;
+} 
+.total-price span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #010001;
+}
+.btn {
+    margin: 0 97px 31px 97px;
+    width: 562px;
+    height: 54px;
+    left: 97px;
+    top: 675px;
+    background: #010001;
+    border: 1px solid #FFFFFF;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    cursor: pointer;
+}
+.btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.none-active{
+    display: none;
+}
+.active {
+    display: block;
+}
